@@ -26,7 +26,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/repositories" element={<Repositories />} />
-          <Route path="/additionalData/repository/:repository_id" element={<RepositoryDetails />} />
+          <Route path="/additional_data/repository/:repository_id" element={<RepositoryDetails />} />
           <Route path="/pipelines/repository/:repository_id" element={<Pipelines />} />          
           <Route path="/pipelines/:id" element={<PipelineDetails />} />
         </Routes>

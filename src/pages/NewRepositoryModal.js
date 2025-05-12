@@ -126,7 +126,7 @@ function NewRepositoryModal({ isOpen, onRequestClose, initialData }) {
 
         try {
 
-            const response = await fetch(`${API_BASE_URL}/crud/additionalData/`, {
+            const response = await fetch(`${API_BASE_URL}/crud/additional_data/`, {
                 method: "POST",
                 headers: {
                 "Content-Type": "application/json",
@@ -259,7 +259,7 @@ function NewRepositoryModal({ isOpen, onRequestClose, initialData }) {
 
         try {
 
-            const response = await fetch(`${API_BASE_URL}/crud/additionalData/${additionalData.id}`, {
+            const response = await fetch(`${API_BASE_URL}/crud/additional_data/${additionalData.id}`, {
                 method: "DELETE",
                 headers: {
                 "Content-Type": "application/json",

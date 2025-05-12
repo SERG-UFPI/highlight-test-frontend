@@ -188,7 +188,7 @@ function Repositories() {
               <td>{new Date(repo.registration_date).toLocaleDateString()}</td>
               <td>
                 <div className="d-flex flex-column gap-2">
-                  <Link to={`/additionalData/repository/${repo.id}`} className="btn btn-primary btn-sm">
+                  <Link to={`/additional_data/repository/${repo.id}`} className="btn btn-primary btn-sm">
                     View Details
                   </Link>
                   <Link to={`/pipelines/repository/${repo.id}`} className="btn btn-secondary btn-sm">

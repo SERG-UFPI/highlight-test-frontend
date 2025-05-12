@@ -23,7 +23,7 @@ function RepositoryDetails() {
             }
     
             try {
-                const response = await fetch(`${API_BASE_URL}/crud/additionalData/repository/${repository_id}`, {
+                const response = await fetch(`${API_BASE_URL}/crud/additional_data/repository/${repository_id}`, {
                     headers: {
                     'Authorization': `Bearer ${token}`,
                     }
