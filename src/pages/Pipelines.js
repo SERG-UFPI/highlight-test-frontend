@@ -192,7 +192,6 @@ function Pipelines() {
             }
 
             const newPipeline = await response.json();
-            setPipelines((prevPipelines) => [...prevPipelines, newPipeline]); // Adiciona o novo pipeline à lista
             
             await handleCloneRepository(newPipeline);         
             
@@ -200,7 +199,7 @@ function Pipelines() {
 
             setTimeout(() => {
                 window.location.reload();
-            }, 2000);
+            }, 1000);
             
         } catch (error) {
             console.error("Error creating pipeline:", error);

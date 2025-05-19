@@ -350,10 +350,10 @@ function PipelineDetails() {
     const searchValue = searchCommits.toLowerCase();
     return (
       commit.hash.toLowerCase().includes(searchValue) ||
-      commit.author.toLowerCase().includes(searchValue) ||
-      commit.committer.toLowerCase().includes(searchValue) ||
-      new Date(commit.date).toLocaleDateString().toLowerCase().includes(searchValue) ||
-      commit.msg.toLowerCase().includes(searchValue)
+      commit.author_name.toLowerCase().includes(searchValue) ||
+      commit.committer_name.toLowerCase().includes(searchValue) ||
+      new Date(commit.author_date).toLocaleDateString().toLowerCase().includes(searchValue) ||
+      commit.message.toLowerCase().includes(searchValue)
     );
   });
 
@@ -765,10 +765,10 @@ function PipelineDetails() {
                 {currentCommits.map((commit, index) => (
                   <tr key={index}>
                     <td>{commit.hash}</td>
-                    <td>{commit.author}</td>
-                    <td>{commit.committer}</td>
-                    <td>{new Date(commit.date).toLocaleDateString()}</td>
-                    <td>{commit.msg}</td>
+                    <td>{commit.author_name}</td>
+                    <td>{commit.committer_name}</td>
+                    <td>{new Date(commit.author_date).toLocaleDateString()}</td>
+                    <td>{commit.message}</td>
                   </tr>
                 ))}
               </tbody>
