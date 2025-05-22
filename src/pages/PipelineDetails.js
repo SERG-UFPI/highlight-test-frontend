@@ -160,8 +160,6 @@ function PipelineDetails() {
 
   const openEvolutionModal = async (revision) => {
 
-    console.log(revision)
-    
     setEvolutionModalIsOpen(true); // Abre o modal
 
     setIsLoadingEvolution(true);
