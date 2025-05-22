@@ -908,6 +908,10 @@ function PipelineDetails() {
               This feature is only available for projects developed in Java.
             </div>
 
+            <div className="alert alert-info text-center">
+              Detailed file-level information in the dataset analysis may not be available at the time of access, as it may still be processing.
+            </div>
+
           {isLoadingEvolution ? (
             <div className="text-center">
               <div className="spinner-border text-primary" role="status">
@@ -1174,6 +1178,10 @@ function PipelineDetails() {
               This feature is only available for projects developed in Java.
             </div>
 
+            <div className="alert alert-info text-center">
+              Detailed file-level information in the dataset analysis may not be available at the time of access, as it may still be processing.
+            </div>
+
             {isLoadingEvolution ? (
               <div className="text-center">
                 <div className="spinner-border text-primary" role="status">
@@ -1404,6 +1412,10 @@ function PipelineDetails() {
             <button type="button" className="btn-close" onClick={closeModal}></button>
           </div>
           <div className="modal-body">
+
+            <div className="alert alert-info text-center">
+              Detailed file-level information in the dataset analysis may not be available at the time of access, as it may still be processing.
+            </div>
 
             <div className="mb-3">
               <button
