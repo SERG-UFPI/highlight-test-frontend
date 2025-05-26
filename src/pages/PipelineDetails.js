@@ -405,7 +405,7 @@ function PipelineDetails() {
 
   const filteredItems = modalData.filter((item) => {
     const matchesFilter = filter === 'all' || (filter === 'true' ? item.is_test_file === true : item.is_test_file === false);
-    const matchesSearch = item.path.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = item.file_path.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesFilter && matchesSearch;
   });
 
@@ -1450,15 +1450,13 @@ function PipelineDetails() {
               <thead>
                 <tr>
                   <th>Path</th>
-                  <th>LOC</th>
                   <th>Is Test File?</th>
                 </tr>
               </thead>
               <tbody>
                 {currentItems.map((item, index) => (
                   <tr key={index}>
-                    <td>{item.path}</td>
-                    <td>{item.loc}</td>
+                    <td>{item.file_path}</td>
                     <td>{item.is_test_file ? 'Yes' : 'No'}</td>
                   </tr>
                 ))}
