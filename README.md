@@ -1,3 +1,7 @@
+## Supported Environments
+
+The tool has been built and tested to run locally on both Windows and Linux environments. Ensure the necessary dependencies and environment variables are properly configured for your operating system.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,6 +73,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Project Structure
+
+The repository is organized as follows:
+
+- **public/**: Static files and frontend configuration.
+- **src/**: Main React application source code.
+  - **components/**: Reusable components.
+  - **pages/**: Main application pages.
+- **.env.local**: Local environment variables.
+- **package.json**: Project dependencies and scripts.
+
+Check each folder for more details about files and functionality.
+
 ## Environment Variables
 
 Before running the project, create a `.env` file in the root directory with the following variables:
@@ -79,3 +96,15 @@ REACT_APP_API_GITHUB_URL=https://api.github.com/repos
 ```
 
 Change the values as needed for your environment.
+
+**The backend for the Highlight Test Code tool is available at:**  
+[https://github.com/SERG-UFPI/highlight-test-backend](https://github.com/SERG-UFPI/highlight-test-backend)
+
+**If you do not wish to install and configure the tool locally, you can access the Highlight Test Code platform directly via the web:**  
+[https://highlight-test-frontend.vercel.app](https://highlight-test-frontend.vercel.app)
+
+## Related Publication
+<a id="1" href="http://dx.doi.org/10.1002/smr.70035">[1]</a> Miranda, Charles, et al. "Test Co-Evolution in Software Projects: A Large-Scale Empirical Study." Journal of Software: Evolution and Process. 37, 7 (2025), e70035.<br>
+<a id="2" href="https://zenodo.org/records/15871617">[2]</a> Miranda, Charles, et al. "Highlight Test Code: Visualizing the Co-Evolution of Test and Production Code in Software Repositories." Simpósio Brasileiro de Engenharia de Software (2025).
+
+
