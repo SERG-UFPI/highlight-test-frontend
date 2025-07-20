@@ -28,7 +28,10 @@ function Register() {
           });
          if (response.ok) {
             toast.success("Action performed successfully.");
-            navigate("/repositories")
+            
+            setTimeout(() => {
+              navigate("/repositories");
+            }, 2000);
           } else {
             // Lidar com erros de registro
             const errorData = await response.json();
@@ -64,7 +67,15 @@ function Register() {
           />
         </div>
         <div className="form-group mb-3">
-          <label htmlFor="password" className="form-label">Password *</label>
+          <label htmlFor="password" className="form-label">Password *
+            <span
+              className="ms-2"
+              style={{ fontSize: "0.95em" }}
+              title="It must have at least 8 characters, including uppercase, lowercase, numbers, and special characters"
+            >
+              <i className="bi bi-info-circle"></i>
+            </span>
+          </label>
           <input 
             required
             type="password" 
@@ -99,7 +110,15 @@ function Register() {
           />
         </div>
         <div className="form-group mb-3">
-          <label htmlFor="email" className="form-label">Email</label>
+          <label htmlFor="email" className="form-label">Email
+            <span
+              className="ms-2"
+              style={{ fontSize: "0.95em" }}
+              title="Please enter a valid email address"
+            >
+              <i className="bi bi-info-circle"></i>
+            </span>
+          </label>
           <input 
             type="email" 
             className="form-control" 
