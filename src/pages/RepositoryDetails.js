@@ -14,12 +14,6 @@ function RepositoryDetails() {
   // ... (buscar detalhes do repositorio com base na id)
   const fetchAdditionalDatas = async () => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(

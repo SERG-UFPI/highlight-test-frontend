@@ -15,12 +15,6 @@ function Pipelines() {
 
   const fetchPermissions = async () => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(
@@ -33,8 +27,7 @@ function Pipelines() {
       );
       if (response.status === 401) {
         localStorage.removeItem("token"); // Exemplo: remover token do localStorage
-        navigate("/login");
-        return;
+
       }
 
       if (response.status !== 200) {
@@ -51,12 +44,6 @@ function Pipelines() {
 
   const fetchRepository = async () => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(
@@ -69,8 +56,7 @@ function Pipelines() {
       );
       if (response.status === 401) {
         localStorage.removeItem("token"); // Exemplo: remover token do localStorage
-        navigate("/login");
-        return;
+
       }
 
       if (response.status !== 200) {
@@ -87,12 +73,6 @@ function Pipelines() {
 
   const fetchPipelines = async () => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(
@@ -106,8 +86,6 @@ function Pipelines() {
 
       if (response.status === 401) {
         localStorage.removeItem("token"); // Exemplo: remover token do localStorage
-        navigate("/login");
-        return;
       }
 
       if (response.status !== 200) {

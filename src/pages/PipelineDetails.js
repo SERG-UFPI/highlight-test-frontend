@@ -553,12 +553,6 @@ function PipelineDetails() {
 
   const fetchPermissions = async (repository_id) => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(
@@ -589,12 +583,6 @@ function PipelineDetails() {
 
   const fetchPipeline = async (id) => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(`${API_BASE_URL}/crud/pipeline/${id}`, {
@@ -633,12 +621,6 @@ function PipelineDetails() {
 
   const fetchRepository = async (repository_id) => {
     const token = localStorage.getItem("token");
-    if (!token) {
-      // Redirecionar para login se não houver token
-      // ...
-      navigate("/login");
-      return;
-    }
 
     try {
       const response = await fetch(
