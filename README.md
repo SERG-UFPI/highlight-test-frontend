@@ -105,6 +105,6 @@ Change the values as needed for your environment.
 
 ## Related Publication
 <a id="1" href="http://dx.doi.org/10.1002/smr.70035">[1]</a> Miranda, Charles, et al. "Test Co-Evolution in Software Projects: A Large-Scale Empirical Study." Journal of Software: Evolution and Process. 37, 7 (2025), e70035.<br>
-<a id="2" href="https://zenodo.org/records/15871617">[2]</a> Miranda, Charles, et al. "Highlight Test Code: Visualizing the Co-Evolution of Test and Production Code in Software Repositories." Simpósio Brasileiro de Engenharia de Software (2025).
+<a id="2" href="https://zenodo.org/records/16756417">[2]</a> Miranda, Charles, et al. "Highlight Test Code: Visualizing the Co-Evolution of Test and Production Code in Software Repositories." Simpósio Brasileiro de Engenharia de Software (2025).
 
 
